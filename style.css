@@ -9,12 +9,13 @@
 :root {
   font-size: 62.5%;
 
-  --hue: 100;
-  --color-base-white: hsl(0, 0%, 100%);
-  --color-base-gray-100: hsl(0, 0%, 96%);
-  --color-base-gray-300: hsl(var(--hue), 60%, 58%);
-  --color-base-gray-500: hsl(0, 0%, 24%);
-  --color-base-gray-900: hsl(var(--hue), 60%, 20%);
+  --color-base-white: #fff;
+  --color-base-white-20: hsla(0, 0%, 100%, 0.2);
+  --color-base-gray900: #121214;
+  --color-base-gray800: #202024;
+  --color-base-blue100: #F4FCFF;
+  --color-base-blue600: #387E96;
+  --color-base-blue800:  #065E7C;
 }
 
 html,
@@ -25,8 +26,6 @@ input {
 
 body {
   font-size: 1.6rem;
-  background-color: var(--color-base-white);
-  color: var(--color-base-gray-900);
 }
 
 #app {
@@ -36,8 +35,7 @@ body {
 }
 
 .container {
-  padding: 1.6rem 3.2rem;
-  width: min(112rem, 100%);
+  padding: 1.2rem 2.8rem;
   margin: 0 auto;
 }
 
@@ -46,28 +44,15 @@ main {
   background-color: var(--color-base-gray-100);
 }
 
-header,
-nav,
-nav ul {
+header{
   display: flex;
+  gap: 2.6rem;
   align-items: center;
-  gap: 7.2rem;
   font-weight: 700;
+
+  
 }
 
-header form {
-  flex: 1;
-}
-
-nav ul {
-  list-style: none;
-  font-size: 1.8rem;
-  color: var(--color-base-gray-300);
-}
-
-ul li.active {
-  color: var(--color-base-gray-900);
-}
 
 .input-wrapper label {
   width: 1px;
